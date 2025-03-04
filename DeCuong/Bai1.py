@@ -31,7 +31,7 @@ for i in range(N):
     if A[i]==5:
         first=i+1
         break
-for i in range(N):
+for i in range(N,first-1,-1):
     if A[i]==5:
         last=i+1
 print(first)
