@@ -34,6 +34,7 @@ for i in range(N):
 for i in range(N-1,first-2,-1):
     if A[i]==5:
         last=i+1
+        break
 print(first)
 print(last)
 #Sap xep chen
