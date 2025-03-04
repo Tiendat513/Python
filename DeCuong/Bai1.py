@@ -25,18 +25,20 @@ for i in range(N):
         sum+=A[i]**2
 print(sum)
 #Tim va in ra so 5 xuat hien dau tien, cuoi cung
-first=-1
+first=-1 #Gán -1 cho khỏi trùng thôi
 last=-1
 for i in range(N):
     if A[i]==5:
-        first=i+1
+        first=i+1 #Tìm được rồi thì ngắt
         break
-for i in range(N-1,first-2,-1):
+for i in range(N-1,first-2,-1): #Tìm từ cuối lên
     if A[i]==5:
         last=i+1
         break
 print(first)
 print(last)
+"""Ba cái sắp xếp này copy chứ k hiểu sao nó chạy đc =))
+"""
 #Sap xep chen
 for i in range(1,N):
     key=A[i]
