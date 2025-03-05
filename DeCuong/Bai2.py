@@ -7,7 +7,10 @@ for i in range(n):
         temp.append(int(input(f"[{i}][{j}]\n")))#In ra mhinh [i][j] với j lần lượt tăng, hết một vòng thì tăng i, tiếp tục tăng j cho đến khi hết i
     A.append(temp)
 #In ra dong co tong lon nhat, nho nhat
-max,min,pos1,pos2=-10**6,10**6,[],[] # tạo biến max, min với 10^6 để so sánh
+max,min,pos1,pos2=-10**6,10**6,[],[] 
+# Gọi max là -∞
+#Vd như muốn tìm max của dãy từ -1 đến 10 thì [max] phải nhỏ hơn mới so sánh đc với -1 hay 10
+#Chứ nếu để dương vô cùng thì không thể so sánh được 
 for i in range(len(A)):
     temp=sum(A[i])
     if min>temp:    # so sánh để tìm min, max
