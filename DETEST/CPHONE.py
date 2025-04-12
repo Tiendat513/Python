@@ -3,7 +3,7 @@ from collections import Counter
 sys.stdin = open('CPHONE.INP')
 sys.stdout = open('CPHONE.OUT', 'w')
 n = int(sys.stdin.readline())
-votes = [int(sys.stdin.readline()) for _ in range(n)]
+votes = [int(input()) for _ in range(n)]
 vote_counts = Counter(votes)
 max_votes = max(vote_counts.values())
 winners = []
